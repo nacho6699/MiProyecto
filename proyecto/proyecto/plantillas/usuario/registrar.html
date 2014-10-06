@@ -1,6 +1,11 @@
 {% extends "base.html" %}
+
+	{% block menu %}
+	{% include "includes/menu_registro.html" %}
+	{%endblock%}
+
 {% block contenido %}
 	<div class="formulario">
-		<label for="">Email :</label><input type="email" id="user-email" placeholder="e.g. john.doe@mozilla.com" required/>
+		{{formulario.as_p}}
 	</div>
 {% endblock %}
