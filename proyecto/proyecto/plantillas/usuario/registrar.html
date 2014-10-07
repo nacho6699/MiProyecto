@@ -7,7 +7,7 @@
 {% block contenido %}
 	<label for="registro"><br><font size="5" color="#0080C0">INTRODUCE TUS DATOS:</font></label>
 	<div class="fregistro">
-		<form action="">
+		<form action="" method="post">
 			{{formulario.as_p}}
 			{% csrf_token %}
 			<button type"submit" class="boton">Registrar</button>
