@@ -90,6 +90,7 @@ body
 	text-align:center;
 	box-shadow: 0px 5px 20px #00FFFF, 0 0 0 10px #80FFFF inset;
 	border-radius: 15px;
+	min-height: 40em;
 	
 }
 #pie

@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="/static/stilo.css">
+	<link rel="stylesheet" href="/static/stiloR.css">
 	{% block titulo %}
 	{%  endblock %}
 </head>
@@ -13,13 +14,17 @@
 	{% endblock %}
 
 
+	<div class="cuerpo">
+		{% block contenido %}
 
-	{% block contenido %}
+		{% endblock %}
+	</div>	
 
-	{% endblock %}
+	
+
 	{%block pie %}
 	{% endblock %}
-	</div>
+	
 
 	<div id="pie">Potosi-Bolivia</div>
 </body>
