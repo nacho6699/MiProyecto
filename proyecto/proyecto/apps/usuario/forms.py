@@ -3,8 +3,16 @@ from django.forms import ModelForm
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from .forms import *
+
 from .models import *
-class fperfil(ModelForm):
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.models import User
+from django.contrib.auth import login, authenticate, logout
+
+
+
+class fPerfil(ModelForm):
 	class Meta:
 		model=Perfil
 		exclude=['user']
